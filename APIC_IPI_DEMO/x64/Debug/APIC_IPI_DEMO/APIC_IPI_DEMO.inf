@@ -7,7 +7,7 @@ Signature="$WINDOWS NT$"
 Class=Sample
 ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} 
 Provider=%ManufacturerName%
-DriverVer=01/13/2017,10.59.13.389
+DriverVer=01/13/2017,12.4.20.367
 CatalogFile=APIC_IPI_DEMO.cat
 
 [DestinationDirs]

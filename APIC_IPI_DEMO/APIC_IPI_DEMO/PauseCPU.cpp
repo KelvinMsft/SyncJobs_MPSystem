@@ -65,8 +65,15 @@ extern "C"
 		context->Params				= NULL;
 		context->Done				= FALSE;
 
-		//Send APIC IPI signal processors
-		KeIpiGenericCall(BroadCaster, (ULONG_PTR)context);
+		if (KeNumberProcessors > 1)
+		{
+			//Send APIC IPI signal processors
+			KeIpiGenericCall(BroadCaster, (ULONG_PTR)context);
+		}
+		else
+		{
+			context->callback(context->Params);
+		}
 
 		ExFreePool(context);
 	}
