@@ -1,0 +1,32 @@
+;
+; APIC_IPI_DEMO.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} 
+Provider=%ManufacturerName%
+DriverVer=01/03/2017,17.41.53.254
+CatalogFile=APIC_IPI_DEMO.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+
+
+[Strings]
+ManufacturerName="KelvinChan"
+ClassName=""
+DiskName="APIC_IPI_DEMO Source Disk"
