@@ -1,4 +1,4 @@
-# SyncJobs_MPSystem
+# SyncJobs
 
 A Demo for the synchronization of Multi-Processor System by using APIC its IPI (Inter-Processor Interrupt)
 
