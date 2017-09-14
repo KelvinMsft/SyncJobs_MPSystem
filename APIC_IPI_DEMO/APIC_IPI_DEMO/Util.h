@@ -1,7 +1,7 @@
 #pragma once
 
 /// Sets a break point that works only when a debugger is present
-#if !defined(HYPERPLATFORM_COMMON_DBG_BREAK)
+#if !defined(APIC_IPI_COMMON_DBG_BREAK)
 #define APIC_IPI_COMMON_DBG_BREAK() \
   if (KD_DEBUGGER_NOT_PRESENT) {         \
   } else {                               \
